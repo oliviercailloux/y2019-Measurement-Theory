@@ -4,8 +4,6 @@ Notes (intended for personal use) about the book by Fred Roberts
 == Naming transitive relations
 SC = str. compl.
 
-TODO check with summary table.
-
 * wo: SC (⇒ refl)
 * qo: refl [pre-order]
 * so: SC (⇒ refl); antisym [linear order, total order]
@@ -15,12 +13,9 @@ TODO check with summary table.
 * spo: asym.
 
 == Foreword
-part of an encyclopedia of mathematics
-most precise language
-treating a problem mathematically—even performing measure-
-ment—does not require the assignment of numbers. Rather, it involves the
-use of precisely defined mathematical objects and relations among them to
-reflect empirical objects and observed relations among these objects.
+* part of an encyclopedia of mathematics
+* most precise language
+treating a problem mathematically—even performing measurement—does not require the assignment of numbers. Rather, it involves the use of precisely defined mathematical objects and relations among them to reflect empirical objects and observed relations among these objects.
 
 Is it possible to measure air pollution with one index that takes
 account of many different pollutants? If so, does it make sense to assert
@@ -52,6 +47,8 @@ Symmetric complement I’d call incomparable part.
 Ex. 1.3, 7, do we exclude empty and consider singleton relations?
 
 Ex. 1.4, 8 misses reflexivity?
+
+Consider Ex. 1.5, 1, 7 or others?
 
 == 1.6 PO
 
