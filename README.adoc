@@ -1,0 +1,65 @@
+= Measurement theory
+Notes (intended for personal use) about the book by Fred Roberts
+
+== Naming transitive relations
+SC = str. compl.
+
+TODO check with summary table.
+
+* wo: SC (⇒ refl)
+* qo: refl [pre-order]
+* so: SC (⇒ refl); antisym [linear order, total order]
+* sso: asym; conn.
+* swo: asym (⇒ irr); neg. tr., or equivalently, incomparability is an equivalence relation
+* po: refl, antisym
+* spo: asym.
+
+== Foreword
+part of an encyclopedia of mathematics
+most precise language
+treating a problem mathematically—even performing measure-
+ment—does not require the assignment of numbers. Rather, it involves the
+use of precisely defined mathematical objects and relations among them to
+reflect empirical objects and observed relations among these objects.
+
+Is it possible to measure air pollution with one index that takes
+account of many different pollutants? If so, does it make sense to assert
+that the pollution level today is 20% lower than it was yesterday?
+
+== Introduction
+Putting measurement on a firm foundation is not a terribly important
+activity in the modern-day physical sciences; many physicists would prob-
+ably not consider it physics, but only "philosophy of physics." Practicing
+physicists usually take measurement for granted, and anyway measure-
+ments are usually based on powerful, well-established theories. In the
+social sciences, on the other hand, much present activity can be cate-
+gorized as the search for appropriate scales of measurement
+
+I don’t think (A, R) instead of just R is a great idea.
+What he writes (R o S) I’d write (S o R). What he writes (S^−1 o R^−1) I’d write (R^−1 o S^−1). Following relations from right to left.
+
+“Strict preference is probably negatively transitive” No, look at (a P c) and (a incom b incomp c).
+
+Further
+anti-transitivity is strong, with asymmetry: asks that a → c ⇒ a → b or a → c ⇒ ¬(b → a) and ¬(c → a) with the asymetry axiom. In fact, together they are equivalent to asking for a strict weak order. TODO prove this.
+
+Example of WO (such as mod-3-greater-than) I’d give from top to bottom, not from right to left. Why restrict to finite sets for right-to-left for wo and so? Holds if A not greater than the reals?
+
+R^* = R/E I’d define as: a* R* b* iff a R b forall a in a*, b in b*. The theorem 1.2 says that \exists is equivalent.
+
+Symmetric complement I’d call incomparable part.
+
+Ex. 1.3, 7, do we exclude empty and consider singleton relations?
+
+Ex. 1.4, 8 misses reflexivity?
+
+== 1.6 PO
+
+== 1.8 Reduction
+a and b are perfect substitutes iff they compare similarly to all others.
+E = inters of E_{compare-the-same} over each R_i.
+
+In both cases (R inter R^−1 and incomparable), E is the symmetric part of R; and the same as the “compare the same to all others” relation (to be checked because Roberts says this holds in the second case).
+
+o_i must send tuples of similar elements to similar elements, where two elements are similar when they compare similarly to all others.
+
