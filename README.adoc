@@ -99,3 +99,6 @@ likely that such criticism will continue until the scales used to measure
 loudness, brightness, IQ, etc., are put on a firmer measurement-theoretic
 foundation.” What’s meant by firmer foundation here?
 
+== 2.6
+The geometric means among experts example seems to provide a conclusion that brings (much) more than bare intuition.
+
