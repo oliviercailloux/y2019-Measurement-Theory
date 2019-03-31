@@ -1,4 +1,5 @@
 = Measurement theory
+
 Notes (intended for personal use) about the book by Fred Roberts
 
 == Naming transitive relations
@@ -17,25 +18,18 @@ SC = str. compl.
 * most precise language
 treating a problem mathematically—even performing measurement—does not require the assignment of numbers. Rather, it involves the use of precisely defined mathematical objects and relations among them to reflect empirical objects and observed relations among these objects.
 
-Is it possible to measure air pollution with one index that takes
-account of many different pollutants? If so, does it make sense to assert
-that the pollution level today is 20% lower than it was yesterday?
-
 == Introduction
-Putting measurement on a firm foundation is not a terribly important
-activity in the modern-day physical sciences; many physicists would prob-
-ably not consider it physics, but only "philosophy of physics." Practicing
-physicists usually take measurement for granted, and anyway measure-
-ments are usually based on powerful, well-established theories. In the
-social sciences, on the other hand, much present activity can be cate-
-gorized as the search for appropriate scales of measurement
+Putting measurement on a firm foundation is not a terribly important activity in the modern-day physical sciences; many physicists would probably not consider it physics, but only "philosophy of physics." Practicing physicists usually take measurement for granted, and anyway measurements are usually based on powerful, well-established theories. In the social sciences, on the other hand, much present activity can be categorized as the search for appropriate scales of measurement
+
+⇒ We don’t know how to measure yet? 
 
 I don’t think (A, R) instead of just R is a great idea.
+
 What he writes (R o S) I’d write (S o R). What he writes (S^−1 o R^−1) I’d write (R^−1 o S^−1). Following relations from right to left.
 
 “Strict preference is probably negatively transitive” No, look at (a P c) and (a incom b incomp c).
 
-Further
+== Further
 anti-transitivity is strong, with asymmetry: asks that a → c ⇒ a → b or a → c ⇒ ¬(b → a) and ¬(c → a) with the asymetry axiom. In fact, together they are equivalent to asking for a strict weak order. TODO prove this.
 
 Example of WO (such as mod-3-greater-than) I’d give from top to bottom, not from right to left. Why restrict to finite sets for right-to-left for wo and so? Holds if A not greater than the reals?
@@ -44,8 +38,6 @@ R^* = R/E I’d define as: a* R* b* iff a R b forall a in a*, b in b*. The theor
 
 Symmetric complement I’d call incomparable part.
 
-Ex. 1.3, 7, do we exclude empty and consider singleton relations?
-
 Ex. 1.4, 8 misses reflexivity?
 
 Consider Ex. 1.5, 1, 7 or others?
@@ -53,10 +45,57 @@ Consider Ex. 1.5, 1, 7 or others?
 == 1.6 PO
 
 == 1.8 Reduction
-a and b are perfect substitutes iff they compare similarly to all others.
-E = inters of E_{compare-the-same} over each R_i.
+two elements are similar (“perfect substitutes”) when they compare similarly to all others.
+
+E = inters of Similar relation over each R_i.
 
 In both cases (R inter R^−1 and incomparable), E is the symmetric part of R; and the same as the “compare the same to all others” relation (to be checked because Roberts says this holds in the second case).
 
-o_i must send tuples of similar elements to similar elements, where two elements are similar when they compare similarly to all others.
+Shrinkable iff similars on (R_i) are also similar on (o_i): o_i must send tuples of similar elements to similar elements.
+
+Irreducible: only trivial equivalent classes under E. Thus shrinkable and irreducible is possible. *If I understand correctly, a system may be not-irreducible but not shrinkable*, which sounds very odd.
+
+== 2.1
+I suppose that if $f$ is injective, then 2.7 is indeed equivalent to the double implication 2.8 instead of the simple implication?
+
+“it is
+important to be able to state such foundational axioms, at least for
+measurement in the social sciences. For we must know under what
+circumstances certain kinds of scales of measurement can be produced. In
+the physical sciences, the situation is different. We by now have well-
+developed scales of measurement, and writing down a representation
+theorem for these scales is often more a theoretical exercise than a
+significant practical development.” This suggests that we could also try in the SoSci to develop scales of measurement without using measurement theory (as has been done in physics), and it is thus unclear why these axioms are important in the SoSci. Might we say that measurement theory is one way to help developing precise theories among others?
+
+* Representation theorem: sufficient conditions for homomorphism.
+* Scale: triplet (U, B, f), or for short, simply f. By observing uniqueness of f we deduce the kind of scale, and hence what we can do with the resulting numbers.
+
+== 2.2
+Recall that isomorphism is not necessarily surjective (“onto”), it need only be injective (“one-to-one”).
+
+If irreducible, homomorphism is an isomorphism.
+
+What if we start with a system that is not shrinkable and reducible? (Thus eq. classes are not trivial but some o_i do not respect similarity on R.)
+
+The last example suggests that f is not regular. But I don’t see why.
+
+== 2.3
+What would be an example of an absolute scale? Require something like addition on an infinite set, or is a finite set sufficent?
+
+What’s an example of a ratio scale that is not absolute?
+
+The way it’s phrased lets me think that an absolute scale is never a ratio scale, and conversely, unless they are the same thing (because of “the only admissible transformation”). TODO check with the example p. 68 that is both ordinal and interval.
+
+I suppose the scale type depends on operations (and relations). Try to find a scale that is either absolute or ordinal depending on operation? Is adding operations necessarily a (weak) decrease in scale quality?
+
+Why “Early men probably distinguished only between cold and warm, thus using a nominal scale.”, isn’t this ordinal?
+
+Why is Th 2.2 not more general? Seems intuitively that by regularity, the set of allowed transformations for f and g should be the same.
+
+“much of the criticism of the applications
+of Stevens' theory of scale type has centered around measurements where
+the class of admissible transformations is not clearly defined. It seems
+likely that such criticism will continue until the scales used to measure
+loudness, brightness, IQ, etc., are put on a firmer measurement-theoretic
+foundation.” What’s meant by firmer foundation here?
 
