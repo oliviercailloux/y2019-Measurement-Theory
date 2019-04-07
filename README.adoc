@@ -25,39 +25,35 @@ Putting measurement on a firm foundation is not a terribly important activity in
 
 I don’t think (A, R) instead of just R is a great idea.
 
-What he writes (R o S) I’d write (S o R). What he writes (S^−1 o R^−1) I’d write (R^−1 o S^−1). Following relations from right to left.
+What he writes (R o S) I’d write (S o R). What he writes (S^−1 o R^−1) I’d write (R^−1 o S^−1). Following relations from right to left. As in Halmos, Naive Set Theory, p. 41.
 
 “Strict preference is probably negatively transitive” No, look at (a P c) and (a incom b incomp c).
 
-== Further
+Ex. 1.4, 8 misses reflexivity?
+
+== Weak orders and simple orders
 anti-transitivity is strong, with asymmetry: asks that a → c ⇒ a → b or a → c ⇒ ¬(b → a) and ¬(c → a) with the asymetry axiom. In fact, together they are equivalent to asking for a strict weak order. TODO prove this.
 
 Example of WO (such as mod-3-greater-than) I’d give from top to bottom, not from right to left. Why restrict to finite sets for right-to-left for wo and so? Holds if A not greater than the reals?
 
-R^* = R/E I’d define as: a* R* b* iff a R b forall a in a*, b in b*. The theorem 1.2 says that \exists is equivalent.
-
-Symmetric complement I’d call incomparable part.
-
-Ex. 1.4, 8 misses reflexivity?
-
-Consider Ex. 1.5, 1, 7 or others?
-
-== 1.6 PO
+To avoid the forward reference in p. 30 and 31 and subsequent apparent change of definitions, we could define stuff a bit ahead of time as follows.
 
 == 1.8 Reduction
-two elements are similar (“perfect substitutes”) when they compare similarly to all others.
+Given R, define E_R as the “perfect substitutes for R” relation: a and b are perfect substitutes for R iff forall c: a R c iff b R c and c R a iff c R b. Two elements are perfect substitutes (“substitute”, for short) when they compare similarly to all others.
 
-E = inters of Similar relation over each R_i.
+Given specified relations (R) and symmetric operations (o), define E as the “perfect substitutes for (R) and (o)” relation: a and b are perfect substitutes for (R) and (o) iff forall R: a and b are perfect substitutes for R; and forall o, forall c: (a o c) and (b o c) are perfect substitutes for R.
 
-In both cases (R inter R^−1 and incomparable), E is the symmetric part of R; and the same as the “compare the same to all others” relation (to be checked because Roberts says this holds in the second case).
+Given a relational system, say that its substitutes match iff substitutes for (R) equals substitutes for (R) and (o). (This is what Roberts call shrinkable. Strange word, because if there are no substitutes at all for (R), the system is “shrinkable”, even though its shrink will be trivial and not reduce the number of elements; and because a shrinked system is still shrinkable.) Substitutes match iff the relations o send substitute elements to similar elements.
 
-Shrinkable iff similars on (R_i) are also similar on (o_i): o_i must send tuples of similar elements to similar elements.
+If substitutes match, define the reduction as R^* = R/E. 
 
-Irreducible: only trivial equivalent classes under E. Thus shrinkable and irreducible is possible. *If I understand correctly, a system may be not-irreducible but not shrinkable*, which sounds very odd.
+Roberts-irreducible I’d call reduced: when all equivalent classes have a single element. Implies substitutes match (because then there’s no substitutes!) and equivalent to: no further reduction (non-trivial) is possible. Opposite: reducible or substitutes do not match. [When no match, it feels like irreducible applies, but in the Roberts sense, it does not.]
+
+Reducing a weak order leads to a simple order.
+
+Define indifference as R ∩ R^−1. Define incomparability as ¬R ∩ ¬R^−1 (Roberts: “symmetric complement”). In a weak order, E is the indifference relation. In a strict weak order, E is the incomparability relation. In both cases, E is the symmetric part of the relation. (Possibly anti-transitivity suffices for this, to be checked.)
 
 == 2.1
-I suppose that if $f$ is injective, then 2.7 is indeed equivalent to the double implication 2.8 instead of the simple implication?
-
 “it is
 important to be able to state such foundational axioms, at least for
 measurement in the social sciences. For we must know under what
@@ -67,30 +63,46 @@ developed scales of measurement, and writing down a representation
 theorem for these scales is often more a theoretical exercise than a
 significant practical development.” This suggests that we could also try in the SoSci to develop scales of measurement without using measurement theory (as has been done in physics), and it is thus unclear why these axioms are important in the SoSci. Might we say that measurement theory is one way to help developing precise theories among others?
 
-* Representation theorem: sufficient conditions for homomorphism.
-* Scale: triplet (U, B, f), or for short, simply f. By observing uniqueness of f we deduce the kind of scale, and hence what we can do with the resulting numbers.
+Interested in numerical RS: A = reals. Can be with >, ≥, + or >, +, ×.
+
+We consider a mapping, or _scale_ $f: A → B$ in the context of a transformation of RSes $U → β$, where U and B must have adequate type, thus corresponding relations and operations. (Mapping designates $f$ itself, scale, the triplet (U, B, f).)
+
+Surjective: “onto”, injective: “one-to-one”.
+
+A mapping is a homomorphism iff, intuitively, it “preserve relations and operations”. Thus R' applies to the mapped elements as R applies to the original ones, and applying f to any two elements then o is the same as o then f. 
+
+Isomorphism defined as one-to-one homomorphism. B isomorphic to U if there is an onto isomorphism.
+
+Example of homomorphism that is not an isomorphism: [0, 8], >, + (mod 9) mapped to {9, 10, 11}, >_reals, + in ring {9, 10, 11}. Then we have indeed that (1, 5) ⇒o 6 ⇒f 9 and (1, 5)⇒f (10, 11) ⇒o' 9.
+
+* Representation theorem: sufficient conditions for homomorphism. We want to phrase falsifiable conditions on the observed system U for obtaining a specified representation (say, into R, >, +).
+* By observing uniqueness of f we deduce the kind of scale, and hence what we can do with the resulting numbers: after having performed transformations (log, …), can we still deduce true (meaningful?) statements about the measured objects? TODO this is strange, as what we can do is supposedly specified by the operations! Also, f may be only up-to order when considering (A, >) but be unique when considering (A, >, +, ×, ÷, ¿).
 
 == 2.2
-Recall that isomorphism is not necessarily surjective (“onto”), it need only be injective (“one-to-one”).
+A statement that compares temperatures of objects is precise and (possibly) true. But its implied meaning is about the objects: twice as hot. This new proposition is not precise enough to admit a truth value (adopting a positivist view). Need hypothesis about the adopted (implicit) RS, that describes what we understand as counting for measuring “hotness”, in the implicit context of the discussion. For temperature we are in a general, unspecified context. For preference we would need to specify. Example: preference twice as high. Meaningful if vNM, consider ut(1/2; 0$; 2500$) = ut(1000$), thus 2500$ double utility than 1000$, when comparing both to 0$. But not meaningful if not in a lottery context.
 
-If irreducible, homomorphism is an isomorphism.
+Thus, 1) we specify the context, that is, the RSes, and acceptable homomorphisms (?!). 2) We can determine mathematically whether a statement is meaningful: it must hold independently of a chosen homomorphism.
 
-What if we start with a system that is not shrinkable and reducible? (Thus eq. classes are not trivial but some o_i do not respect similarity on R.)
+Determining whether a statement is meaningful, when the context is not precisely specified, is not purely mathematical and can even be experimental: imagine we discover that the feeling of hotness sometimes contradict the current definition of temperature but this feeling relation is sometimes much more useful than the physics one.
+
+[Note that specifying operations in the context is useful to restrict admissible scales, and can make some propositions meaningful. For example, specifying operation + on the reals requires to maintain any neutral element for the corresponding operation.]
+
+Considering U and B, we refer to their homomorphisms as simply all homomorphisms.
+
+Given a homomorphism f, we can perhaps reach all homomorphisms by transforming f (using phi circle f). If so, the scale f is regular. The context (U, B) is regular iff we can reach any scale by transforming another one. [Here Roberts uses representation (defined in 2.1.3) for context.] Observe that the context is not regular iff some homomorphism confounds elements that are kept distinct by some other homomorphism.
+
+If reduced, homomorphism is an isomorphism.
 
 The last example suggests that f is not regular. But I don’t see why.
 
 == 2.3
-What would be an example of an absolute scale? Require something like addition on an infinite set, or is a finite set sufficent?
+Example of absolute scale: {a, b}, emptyset, o (anything goes) TO reals, emptyset, +. Or I suppose addition in a ring would permit a less trivial example.
 
-What’s an example of a ratio scale that is not absolute?
-
-The way it’s phrased lets me think that an absolute scale is never a ratio scale, and conversely, unless they are the same thing (because of “the only admissible transformation”). TODO check with the example p. 68 that is both ordinal and interval.
-
-I suppose the scale type depends on operations (and relations). Try to find a scale that is either absolute or ordinal depending on operation? Is adding operations necessarily a (weak) decrease in scale quality?
+The way it’s phrased lets me think that an absolute scale is never a ratio scale, and conversely. However, we could define “at least ordinal”, meaning that the transformations must be monotonous (but not necessarily that every monotonous transformation is acceptable). This is, I suppose, the meaning to use in Ex. 2.3 3.
 
 Why “Early men probably distinguished only between cold and warm, thus using a nominal scale.”, isn’t this ordinal?
 
-Why is Th 2.2 not more general? Seems intuitively that by regularity, the set of allowed transformations for f and g should be the same.
+Th. 2.2 (about regularity leading to some scale types being independent of the choice of homomorphism) for the case of monotonous transformation (regular ordinal scale) rests on the following fact. If f, g and h are homomorphism, some transformation phi_f^g circle f = g. Also, some phi_g circle g = h. The fact is that [phi_g circl phi_f^g and phi_f^g are monotonous] iff phi_g is monotonous.
 
 “much of the criticism of the applications
 of Stevens' theory of scale type has centered around measurements where
@@ -99,6 +111,16 @@ likely that such criticism will continue until the scales used to measure
 loudness, brightness, IQ, etc., are put on a firmer measurement-theoretic
 foundation.” What’s meant by firmer foundation here?
 
+How to represent an anchor? You ask an expert to rate items and set an anchor: “consider that the zero grade means ‘just not safe enough for authorizing sale’”. Translation in terms of operations?
+
+== 2.5
+Derived scale: density (mass divided by volume). Either is fixed (for a fixed choice of unity) or is fixed up to unity of mass and volume. This leads to regularity in the narrow sense or in the wide sense.
+
 == 2.6
-The geometric means among experts example seems to provide a conclusion that brings (much) more than bare intuition.
+The geometric means among experts example goes beyond intuition. But it is hard to figure out how the experts could agree on an anchor but not on a scale, thus how they could evaluate on the basis of ratio scales. And hard to make sense of the resulting comparison, IMHO. (The example application provides an example where perhaps the scale is a ratio scale, but as discussed, it is unclear whether the anchor is shared, and it seems hard to me to find an answer to that question without knowing more about the context and intended use of these comparisons.)
+
+Consider Consumer Price Index, 2.6.2?
+
+== Discussion
+Why no recent references in this recent book? (Most recent seems to be 1978.)
 
