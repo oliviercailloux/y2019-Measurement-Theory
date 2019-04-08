@@ -83,7 +83,9 @@ A statement that compares temperatures of objects is precise and (possibly) true
 
 Thus, 1) we specify the context, that is, the RSes, and acceptable homomorphisms (?!). 2) We can determine mathematically whether a statement is meaningful: it must hold independently of a chosen homomorphism.
 
-Determining whether a statement is meaningful, when the context is not precisely specified, is not purely mathematical and can even be experimental: imagine we discover that the feeling of hotness sometimes contradict the current definition of temperature but this feeling relation is sometimes much more useful than the physics one.
+Determining whether a proposition is meaningful, when the context is not precisely specified, is not purely mathematical and can even be experimental: imagine we discover that the feeling of hotness sometimes contradict the current definition of temperature but this feeling relation is sometimes much more useful than the physics one.
+
+In other words (?), whether a proposition is meaningful can be determined once it is said to which kind of transformations the proposition should resist. For example, transforming a price by adding a constant to it is a significant change that must not necessarily leave comparisons intact; whereas transforming it by multiplying by a constant is not a significant change wrt comparisons of indices of price. These are independence requirements on relations (which ones?).
 
 [Note that specifying operations in the context is useful to restrict admissible scales, and can make some propositions meaningful. For example, specifying operation + on the reals requires to maintain any neutral element for the corresponding operation.]
 
@@ -117,9 +119,13 @@ How to represent an anchor? You ask an expert to rate items and set an anchor: â
 Derived scale: density (mass divided by volume). Either is fixed (for a fixed choice of unity) or is fixed up to unity of mass and volume. This leads to regularity in the narrow sense or in the wide sense.
 
 == 2.6
-The geometric means among experts example goes beyond intuition. But it is hard to figure out how the experts could agree on an anchor but not on a scale, thus how they could evaluate on the basis of ratio scales. And hard to make sense of the resulting comparison, IMHO. (The example application provides an example where perhaps the scale is a ratio scale, but as discussed, it is unclear whether the anchor is shared, and it seems hard to me to find an answer to that question without knowing more about the context and intended use of these comparisons.)
+The geometric means among experts example goes beyond intuition. But it is hard to figure out how the experts could agree on an anchor but not on a unit, thus how they could evaluate on the basis of ratio scales. And hard to make sense of the resulting comparison, IMHO. (The example application provides an example where perhaps the scale is a ratio scale, but as discussed, it is unclear whether the anchor is shared, and it seems hard to me to find an answer to that question without knowing more about the context and intended use of these comparisons.)
 
-Consider Consumer Price Index, 2.6.2?
+The example of Consumer Price Index, 2.6.2, provides such a situation: the anchor is fixed (item worth zero), but not the unit.
+
+These two examples seem to assume that we are free to choose the scale, subject to satisfaction of some properties such as meaningfulness. In a descriptive approach, it seems to me the opposite point of view is more relevant: we want to capture an empirical relation (e.g. the feeling of prices raising up), which is given to us, and thus the scale is determined by nature, though unknown to us. In a normative approach, we start by listing desired properties, then search for the set of scales which satisfy the properties. E.g. we want independence wrt change of unit. On the contrary, in the given examples, the scale is given and known, and we wonder which propositions are meaningful (in reality we know which ones should be meaningful and use this knowledge to criticise the adopted scale).
+
+Mainly the desirable properties of independence are the interesting stuff in these applications, not the mathematical sophistication.
 
 == Discussion
 Why no recent references in this recent book? (Most recent seems to be 1978.)
