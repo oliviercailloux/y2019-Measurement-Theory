@@ -67,13 +67,13 @@ Interested in numerical RS: A = reals. Can be with >, ≥, + or >, +, ×.
 
 We consider a mapping, or _scale_ $f: A → B$ in the context of a transformation of RSes $U → β$, where U and B must have adequate type, thus corresponding relations and operations. (Mapping designates $f$ itself, scale, the triplet (U, B, f).)
 
-Surjective: “onto”, injective: “one-to-one”.
+Surjective: “onto”, injective: “one-to-one”. Better use the former terms, as “one-to-one” suggests a bijection.
 
 A mapping is a homomorphism iff, intuitively, it “preserve relations and operations”. Thus R' applies to the mapped elements as R applies to the original ones, and applying f to any two elements then o is the same as o then f. 
 
-Isomorphism defined as one-to-one homomorphism. B isomorphic to U if there is an onto isomorphism.
+Isomorphism defined as injective homomorphism. B isomorphic to U if there is a surjective isomorphism.
 
-Example of homomorphism that is not an isomorphism: [0, 8], >, + (mod 9) mapped to {9, 10, 11}, >_reals, + in ring {9, 10, 11}. Then we have indeed that (1, 5) ⇒o 6 ⇒f 9 and (1, 5)⇒f (10, 11) ⇒o' 9.
+Example of homomorphism that is not an isomorphism: [0, 8], >, + (mod 3) mapped to {9, 10, 11}, >_reals, + in ring {9, 10, 11}. Then we have indeed that (1, 5) ⇒o 6 ⇒f 9 and (1, 5)⇒f (10, 11) ⇒o' 9.
 
 * Representation theorem: sufficient conditions for homomorphism. We want to phrase falsifiable conditions on the observed system U for obtaining a specified representation (say, into R, >, +).
 * By observing uniqueness of f we deduce the kind of scale, and hence what we can do with the resulting numbers: after having performed transformations (log, …), can we still deduce true (meaningful?) statements about the measured objects? TODO this is strange, as what we can do is supposedly specified by the operations! Also, f may be only up-to order when considering (A, >) but be unique when considering (A, >, +, ×, ÷, ¿).
@@ -127,6 +127,13 @@ These two examples seem to assume that we are free to choose the scale, subject 
 
 Mainly the desirable properties of independence are the interesting stuff in these applications, not the mathematical sophistication.
 
-== Discussion
-Why no recent references in this recent book? (Most recent seems to be 1978.)
+= 3
+Countable: injection to the integers [dénombrable]. Denumerable: bijection with the integers [infini dénombrable].
+Ex. 3.2 16 (b) is intruiguing: “Construct an extensive structure (A, R, o) which is not isomorphic to its reduction.”
+I don’t think the argument p. 137 “For 3,uE 1,0 implies u = 2” is very convincing. For it seems to be based on that very f, whose uniqueness is not proven.
+What is a non-archimedean representation?
+Unclear what use there is for the proposed caracterisation Difference measurement.
+
+Is it true that (1) ⇔ (2), with (1) = a R b iff (aoc) R (boc) and (2) = a R b ∧ c R e ⇒ aoc R b. Or try to show that the implication is false under group linear order (maybe Archimedian is required).
+
 
